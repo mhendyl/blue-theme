@@ -1,0 +1,14 @@
+name: Blue theme
+description: da blue theme
+type: theme
+core: 8.x
+base theme: classy
+
+libraries:
+  - blue_theme/global-styling
+
+region:
+  custom_header_one: 'Custom Header One'
+  custom_header_two: 'Custom Header Two'
+  custom_footer_one: 'Custom Footer One'
+  custom_footer_two: 'Custom Footer Two'

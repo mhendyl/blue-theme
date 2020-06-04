@@ -1,0 +1,76 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region <div>.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+{%
+  set classes = [
+    'region',
+    'region-' ~ region|clean_class,
+  ]
+%}
+{# {% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    {{ content }}
+  </div>
+{% endif %} #}
+<footer class="bg-light mt-5">
+  <div class="footer-one p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>PT. BFI Finance Indonesia Tbk</h5>
+          <span>
+          BFI Tower <br>
+          Sunburst CBD Lot.1.2 <br>
+          Jl. Kapt. Soebijanto Djojohadikusumo <br> BSD City - Tangerang Selatan 15322
+        </span>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-primary">Customer Care <i class="fa fa-phone"></i> 1500018</button>
+          <span class="font-weight-bold d-block mt-1">NEWSLETTER</span>
+          <form class="form-inline mt-3">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <div class="d-inline social-media">
+            <a href="#"><i class="fa fa-facebook-square"></i></a>
+            <a href="#"><i class="fa fa-twitter-square"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube-square"></i></a>
+            <a href="#"><i class="fa fa-linkedin-square"></i></a>
+          </div>
+          <span class="d-block mt-3">BFI Registered and supervised by :</span>
+          <img class="img-ojk" src="./assets/images/ojk-logo.png" alt="ojk logo">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-two p-3">
+    <div class="container">
+      <div class="d-inline w-100">
+        <span>&copy;</span>
+        <span class="font-weight-bold">PT BFI Finance Indonesia Tbk</span>
+        <ul class="float-right">
+          <li class="d-inline mr-2">Career</li>
+          <li class="d-inline mr-2">Peluang Bisnis</li>
+          <li class="d-inline mr-2">Contact Us</li>
+          <li class="d-inline mr-2">Our Branch</li>
+          <li class="d-inline mr-2">Terms of Use</li>
+          <li class="d-inline">Privacy Policy</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,15 @@
+global-styling:
+  css:
+    theme:
+      assets/css/contrib/bootstrap.min.css: {}
+      assets/css/contrib/bootstrap-grid.min.css: {}
+      assets/css/contrib/bootstrap.min-reboot.css: {}
+      https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css: {type: external, minified: true}
+      assets/css/car-pawn.css: {}
+      assets/css/header-footer.css: {}
+      assets/css/landing.css: {}
+  js:
+    js/bootstrap.bundle.min.js: {}
+    js/bootstrap.min.js: {}
+  dependencies:
+    - core/jquery
